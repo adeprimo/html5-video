@@ -386,7 +386,7 @@ if(jQuery.fn.rect===undefined)jQuery.fn.rect = function(setrect){
 		});
 	}
 	else {
-		var p = this.offset();
+		var p = this.position();
 		return {x:p.left, y:p.top, width:this.width(), height:this.height()};
 	}
 }
@@ -412,7 +412,7 @@ if(jQuery.fn.origin===undefined)jQuery.fn.origin = function(setpoint){
 		});
 	}
 	else {
-		var p = this.offset();
+		var p = this.position();
 		return {x:p.left, y:p.top};
 	}
 }
